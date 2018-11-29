@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LeaveRequestAdminDemo1</string>
+
+    <string name="login_alert">User or Password Incorrect!</string>
+    <string name="under_login_logo">Check Efficiency, Make Productive</string>
+    <string name="title_activity_admin_management">adminManagement</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="menu_item_1_girditem_employee">Employee List</string>
+    <string name="menu_item_2_girditem_employee">Leave Types</string>
+    <string name="menu_item_1_girditem_department">Departments</string>
+    <string name="menu_item_2_girditem_department">Roles</string>
+    <string name="search_box_hint">နာမည္ျဖင့္ရွာရန္</string>
+</resources>

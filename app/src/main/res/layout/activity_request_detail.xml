@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_request_detail"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="@android:color/white"
+                app:strokeColor="@color/colorGrey"
+                app:strokeWidth="1dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+                    <TextView
+                        android:id="@+id/tvRequestNameTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textColor="@color/colorGrey"
+                        android:paddingBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/tvRequestName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGreyLight"
+                        android:textColor="@color/colorGrey"
+                        android:layout_below="@+id/tvRequestNameTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/layoutRequestDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/tvRequestName"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvRequestEndDateTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="StartDate"
+                                android:textColor="@color/colorGrey"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"/>
+
+                            <TextView
+                                android:id="@+id/tvRequestEndDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvRequestEndDateTitle"
+                                android:layout_centerHorizontal="true"
+                                android:background="@color/colorGreyLight"
+                                android:padding="8dp"
+                                android:textColor="@color/colorGrey" />
+
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="16dp"/>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvRequestStartDateTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="EndDate"
+                                android:textColor="@color/colorGrey"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"/>
+
+                            <TextView
+                                android:id="@+id/tvRequestStartDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvRequestStartDateTitle"
+                                android:layout_centerHorizontal="true"
+                                android:background="@color/colorGreyLight"
+                                android:padding="8dp"
+                                android:textColor="@color/colorGrey" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvRequestLeavesDayTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Days"
+                        android:textColor="@color/colorGrey"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/layoutRequestDate"/>
+                    <TextView
+                        android:id="@+id/tvRequestLeavesDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGreyLight"
+                        android:textColor="@color/colorGrey"
+                        android:layout_below="@+id/tvRequestLeavesDayTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"/>
+                    <TextView
+                        android:id="@+id/tvRequestReasonTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reason"
+                        android:textColor="@color/colorGrey"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/tvRequestLeavesDay"/>
+                    <TextView
+                        android:id="@+id/tvRequestReason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGreyLight"
+                        android:textColor="@color/colorGrey"
+                        android:layout_below="@+id/tvRequestReasonTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"/>
+                    <TextView
+                        android:id="@+id/tvRequestDutyTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Helper Name"
+                        android:textColor="@color/colorGrey"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/tvRequestReason"/>
+                    <RelativeLayout
+                        android:id="@+id/rlRequestDuty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_below="@+id/tvRequestDutyTitle"
+                        android:background="@color/colorGreyLight">
+
+                        <Spinner
+                            android:id="@+id/requestHelperSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:popupBackground="@color/colorGreyLight"
+                            android:popupElevation="4dp"
+                            android:minHeight="40dp"/>
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/tvRequestTypeOfDutyTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transfered Tasks"
+                        android:textColor="@color/colorGrey"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/rlRequestDuty"/>
+                    <TextView
+                        android:id="@+id/tvRequestTypeOfDuty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGreyLight"
+                        android:textColor="@color/colorGrey"
+                        android:layout_below="@+id/tvRequestTypeOfDutyTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"/>
+                    <TextView
+                        android:id="@+id/tvRequestSubmitDutyTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Explained"
+                        android:textColor="@color/colorGrey"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/tvRequestTypeOfDuty"/>
+                    <TextView
+                        android:id="@+id/tvRequestSubmitDuty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGreyLight"
+                        android:textColor="@color/colorGrey"
+                        android:layout_below="@+id/tvRequestSubmitDutyTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/tvRequestဴLeaveType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Please determine the LeaveType"
+                        android:textColor="@color/colorGrey"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/tvRequestSubmitDuty"/>
+                    <RelativeLayout
+                        android:id="@+id/rlRequestLeaveType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_below="@+id/tvRequestဴLeaveType"
+                        android:background="@color/colorGreyLight">
+
+                        <Spinner
+                            android:id="@+id/requestLeaveTypeSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:popupBackground="@color/colorGreyLight"
+                            android:popupElevation="4dp"
+                            android:minHeight="40dp"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvRequestRemarkTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remark"
+                        android:textColor="@color/colorGrey"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/rlRequestLeaveType"/>
+                    <EditText
+                        android:id="@+id/edRequestRemark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGreyLight"
+                        android:textColor="@color/colorGrey"
+                        android:layout_below="@+id/tvRequestRemarkTitle"
+                        android:hint="Please give some remark"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/linearbuttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="right"
+                        android:layout_below="@+id/edRequestRemark"
+                        android:orientation="horizontal">
+
+                        <android.support.design.button.MaterialButton
+                            android:id="@+id/btnRquestAccept"
+                            android:layout_width="@dimen/btn_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:padding="8dp"
+                            android:text="Accept"
+                            android:textAlignment="center"
+                            app:backgroundTint="@color/colorAccent"
+                            android:textColor="@color/colorGrey"/>
+
+                        <android.support.design.button.MaterialButton
+                            android:id="@+id/btnRequestDecline"
+                            android:layout_width="@dimen/btn_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:padding="8dp"
+                            android:text="Deny"
+                            android:textAlignment="center"
+                            app:backgroundTint="@color/requestDeclineRed"
+                            android:textColor="@color/colorGrey"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.design.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

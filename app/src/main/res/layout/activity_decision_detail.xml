@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_decision_detail"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp">
+                <ImageView
+                    android:id="@+id/imgDecision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvDecision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+
+            <android.support.design.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:backgroundTint="@android:color/white"
+                app:strokeWidth="1dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+                    <TextView
+                        android:id="@+id/tvDecisionNameTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Employee Name"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/colorGrey"/>
+                    <TextView
+                        android:id="@+id/tvDecisionName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGreyLight"
+                        android:layout_below="@+id/tvDecisionNameTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorGrey"/>
+                    <TextView
+                        android:id="@+id/tvDecisionTotalDaysTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Days"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/colorGrey"
+                        android:layout_below="@+id/tvDecisionName"/>
+                    <TextView
+                        android:id="@+id/tvDecisionTotalDays"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGreyLight"
+                        android:layout_below="@+id/tvDecisionTotalDaysTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorGrey"/>
+                    <LinearLayout
+                        android:id="@+id/layoutDecisionDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/tvDecisionTotalDays"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvDecisionStartDateTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Start Date"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"
+                                android:paddingLeft="8dp"
+                                android:textColor="@color/colorGrey"/>
+
+                            <TextView
+                                android:id="@+id/tvDecisionStartDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvDecisionStartDateTitle"
+                                android:layout_centerHorizontal="true"
+                                android:background="@color/colorGreyLight"
+                                android:padding="8dp"
+                                android:textColor="@color/colorGrey"/>
+
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="16dp"
+                            android:textColor="@color/colorGrey"/>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvDecisionEndDateTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="End Date"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"
+                                android:paddingLeft="8dp"
+                                android:textColor="@color/colorGrey"/>
+
+                            <TextView
+                                android:id="@+id/tvDecisionEndDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvDecisionEndDateTitle"
+                                android:layout_centerHorizontal="true"
+                                android:background="@color/colorGreyLight"
+                                android:padding="8dp"
+                                android:textColor="@color/colorGrey" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvDecisionLeaveTypeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Leave Type"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/layoutDecisionDate"
+                        android:textColor="@color/colorGrey"/>
+                    <TextView
+                        android:id="@+id/tvDecisionLeaveType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGreyLight"
+                        android:layout_below="@+id/tvDecisionLeaveTypeTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorGrey"/>
+                    <TextView
+                        android:id="@+id/tvDecisionReasonTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reason"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/tvDecisionLeaveType"
+                        android:textColor="@color/colorGrey"/>
+                    <TextView
+                        android:id="@+id/tvDecisionReason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGreyLight"
+                        android:layout_below="@+id/tvDecisionReasonTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorGrey"/>
+                    <TextView
+                        android:id="@+id/tvDecisionHelperIdTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Helper Id"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/colorGrey"
+                        android:layout_below="@+id/tvDecisionReason"/>
+                    <TextView
+                        android:id="@+id/tvDecisionHelperId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGreyLight"
+                        android:layout_below="@+id/tvDecisionHelperIdTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorGrey"/>
+                    <TextView
+                        android:id="@+id/tvDecisionAssignTaskTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Assign Task"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/tvDecisionHelperId"
+                        android:textColor="@color/colorGrey"/>
+                    <TextView
+                        android:id="@+id/tvDecisionAssignTask"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGreyLight"
+                        android:layout_below="@+id/tvDecisionAssignTaskTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorGrey"/>
+                    <TextView
+                        android:id="@+id/tvDecisionExplainedTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Explained"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/tvDecisionAssignTask"
+                        android:textColor="@color/colorGrey"/>
+                    <TextView
+                        android:id="@+id/tvDecisionExplained"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGreyLight"
+                        android:layout_below="@+id/tvDecisionExplainedTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorGrey"/>
+
+                    <TextView
+                        android:id="@+id/tvDecisionAdminNameTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admin Name"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/tvDecisionExplained"
+                        android:textColor="@color/colorGrey"/>
+                    <TextView
+                        android:id="@+id/tvDecisionAdminName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGreyLight"
+                        android:layout_below="@+id/tvDecisionAdminNameTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorGrey"/>
+
+                    <TextView
+                        android:id="@+id/tvDecisionTimeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Decision Time"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/tvDecisionAdminName"
+                        android:textColor="@color/colorGrey"/>
+                    <TextView
+                        android:id="@+id/tvDecisionTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGreyLight"
+                        android:layout_below="@+id/tvDecisionTimeTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorGrey"/>
+
+                    <TextView
+                        android:id="@+id/tvDecisionRemarkTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Decision Time"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:layout_below="@+id/tvDecisionTime"
+                        android:textColor="@color/colorGrey"/>
+                    <TextView
+                        android:id="@+id/tvDecisionRemark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGreyLight"
+                        android:layout_below="@+id/tvDecisionRemarkTitle"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorGrey"/>
+
+
+                </RelativeLayout>
+
+            </android.support.design.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

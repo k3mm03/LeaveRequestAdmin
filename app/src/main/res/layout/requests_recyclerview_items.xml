@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:backgroundTint="@color/gridbgColor"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/colorGrey">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/recyclerview_profile_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/choutzuyu1"
+            app:civ_fill_color="@android:color/white" />
+
+        <TextView
+            android:id="@+id/employee_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recyclerview_profile_image"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorGrey"
+            android:padding="8dp"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@+id/recyclerview_profile_image"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/recyclerview_text_padding"
+                android:textColor="@color/colorGrey"
+                android:text="Total Days" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/recyclerview_text_padding"
+                android:textColor="@color/colorGrey"
+                android:text="Start Date" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/recyclerview_text_padding"
+                android:textColor="@color/colorGrey"
+                android:text="End Date" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/recyclerview_text_padding"
+                android:textColor="@color/colorGrey"
+                android:text="Helper Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/recyclerview_text_padding"
+                android:textColor="@color/colorGrey"
+                android:text="Explained" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/recyclerview_text_padding"
+                android:textColor="@color/colorGrey"
+                android:text="Reason" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/middleLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/linear"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:textColor="@color/colorGrey"
+                android:text=":"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:textColor="@color/colorGrey"
+                android:text=":"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:textColor="@color/colorGrey"
+                android:text=":"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:textColor="@color/colorGrey"
+                android:text=":"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:textColor="@color/colorGrey"
+                android:text=":"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:textColor="@color/colorGrey"
+                android:text=":"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fillinlinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/middleLinear"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/totalday_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrey"
+                android:padding="4dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/startdate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrey"
+                android:padding="4dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/enddate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrey"
+                android:padding="4dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/helper_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrey"
+                android:padding="4dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/explained_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrey"
+                android:padding="4dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/reason_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrey"
+                android:padding="4dp"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.design.card.MaterialCardView>

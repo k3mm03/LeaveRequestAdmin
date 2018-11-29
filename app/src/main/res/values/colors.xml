@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#90C33E</color>
+
+    <color name="colorGrey">#707070</color>
+    <color name="colorGreyLight">#cecece</color>
+    <color name="colorPurpleDark">#9656F3</color>
+    <color name="colorPurpleLight">#ECE0FD</color>
+    <color name="colorBlueLight">#0091c5</color>
+    <color name="colorAlertRed">#CB2121</color>
+
+    <color name="customedWhite">#d4ffffff</color>
+    <color name="gridbgColor">#CBDCDF</color>
+    <color name="requestAcceptGreen">#098e1b</color>
+    <color name="requestDeclineRed">#E38E8E</color>
+    <color name="editbtnColorYellow">#EFE885</color>
+    <color name="appBarColorGrey">#d6d4d4</color>
+    <color name="calendarIconTint">#0886FC</color>
+</resources>

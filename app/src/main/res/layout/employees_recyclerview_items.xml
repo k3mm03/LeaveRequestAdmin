@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:backgroundTint="@color/gridbgColor"
+    app:strokeColor="@color/colorGrey"
+    app:strokeWidth="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/employeelist_profile_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/choutzuyu1"
+            app:civ_fill_color="@android:color/white" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@+id/employeelist_profile_image"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/recyclerview_text_padding"
+                android:textColor="@color/colorGrey"
+                android:text="Code" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/recyclerview_text_padding"
+                android:textColor="@color/colorGrey"
+                android:text="Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/recyclerview_text_padding"
+                android:textColor="@color/colorGrey"
+                android:text="Role" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/recyclerview_text_padding"
+                android:textColor="@color/colorGrey"
+                android:text="Department" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/middleLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/linear"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/recyclerview_text_padding"
+                android:textColor="@color/colorGrey"
+                android:text=":" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/recyclerview_text_padding"
+                android:textColor="@color/colorGrey"
+                android:text=":" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/recyclerview_text_padding"
+                android:textColor="@color/colorGrey"
+                android:text=":" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/recyclerview_text_padding"
+                android:textColor="@color/colorGrey"
+                android:text=":" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/middleLinear"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/employee_code_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrey"
+                android:padding="@dimen/recyclerview_text_padding" />
+
+            <TextView
+                android:id="@+id/employee_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrey"
+                android:padding="@dimen/recyclerview_text_padding" />
+
+            <TextView
+                android:id="@+id/employee_role_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrey"
+                android:padding="@dimen/recyclerview_text_padding" />
+
+            <TextView
+                android:id="@+id/employee_department_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrey"
+                android:padding="@dimen/recyclerview_text_padding" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear"
+            android:layout_alignLeft="@+id/linear"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/employee_edit_btn"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Edit"
+                android:textAlignment="center"
+                app:backgroundTint="@color/editbtnColorYellow"
+                android:textColor="@color/colorGrey"
+                app:strokeColor="@color/colorGrey"
+                app:strokeWidth="1dp" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/employee_delete_btn"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:padding="8dp"
+                android:text="Delete"
+                android:textAlignment="center"
+                android:textColor="@color/colorGrey"
+                app:backgroundTint="@color/requestDeclineRed"
+                app:strokeColor="@color/colorGrey"
+                app:strokeWidth="1dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.card.MaterialCardView>

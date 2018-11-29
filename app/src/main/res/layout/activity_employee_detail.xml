@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_employee_detail"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/employee_detail_profile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/choutzuyu1" />
+
+            <android.support.design.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/customedWhite"
+                app:strokeColor="@color/colorGrey"
+                app:strokeWidth="1dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="@dimen/coner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:padding="8dp"
+                        android:text="Code"
+                        android:textColor="@color/colorGrey" />
+
+                    <EditText
+                        android:id="@+id/employeedetail_code_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/colorGreyLight"
+                        android:padding="8dp"
+                        android:textColor="@color/colorGrey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:padding="8dp"
+                        android:text="Name"
+                        android:textColor="@color/colorGrey" />
+
+                    <EditText
+                        android:id="@+id/employeedetail_name_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/colorGreyLight"
+                        android:padding="8dp"
+                        android:textColor="@color/colorGrey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:padding="8dp"
+                        android:text="Password"
+                        android:textColor="@color/colorGrey" />
+
+                    <EditText
+                        android:id="@+id/employeedetail_pwd_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/colorGreyLight"
+                        android:padding="8dp"
+                        android:textColor="@color/colorGrey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:padding="8dp"
+                        android:text="Role"
+                        android:textColor="@color/colorGrey" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/colorGreyLight">
+
+                        <Spinner
+                            android:id="@+id/employeedetail_role_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:popupBackground="@color/colorGreyLight"
+                            android:popupElevation="4dp"
+                            android:minHeight="40dp"
+                            />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:padding="8dp"
+                        android:text="Department"
+                        android:textColor="@color/colorGrey" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/colorGreyLight">
+
+                        <Spinner
+                            android:id="@+id/employeedetail_department_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:popupBackground="@color/colorGreyLight"
+                            android:popupElevation="4dp"
+                            android:minHeight="40dp"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:padding="8dp"
+                        android:text="Entry Day"
+                        android:textColor="@color/colorGrey" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/colorGreyLight"
+                        android:padding="8dp">
+                        <TextView
+                            android:id="@+id/employeedetail_entryday_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorGrey"
+                            android:paddingLeft="4dp"
+                            android:text="Pick the Entry Day!!"/>
+                        <ImageView
+                            android:id="@+id/employeedetail_calendar_img"
+                            android:layout_toRightOf="@+id/employeedetail_entryday_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/calendar"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="4dp"
+                            android:scaleType="fitEnd"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:padding="8dp"
+                        android:text="Salary"
+                        android:textColor="@color/colorGrey" />
+
+                    <EditText
+                        android:id="@+id/employeedetail_salary_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/colorGreyLight"
+                        android:padding="8dp"
+                        android:textColor="@color/colorGrey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:padding="8dp"
+                        android:text="Leave Days"
+                        android:textColor="@color/colorGrey" />
+
+                    <EditText
+                        android:id="@+id/employeedetail_leavedays_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/colorGreyLight"
+                        android:padding="8dp"
+                        android:textColor="@color/colorGrey" />
+
+                    <LinearLayout
+                        android:id="@+id/linearbuttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <android.support.design.button.MaterialButton
+                            android:id="@+id/employeedetail_save_btn"
+                            android:layout_width="@dimen/btn_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:padding="8dp"
+                            android:text="Save"
+                            android:textAlignment="center"
+                            app:backgroundTint="@color/colorAccent"
+                            android:textColor="@color/colorGrey"/>
+
+                        <android.support.design.button.MaterialButton
+                            android:id="@+id/employeedetail_cancel_btn"
+                            android:layout_width="@dimen/btn_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:padding="8dp"
+                            android:text="Cancel"
+                            android:textAlignment="center"
+                            app:backgroundTint="@color/requestDeclineRed"
+                            android:textColor="@color/colorGrey"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.design.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
