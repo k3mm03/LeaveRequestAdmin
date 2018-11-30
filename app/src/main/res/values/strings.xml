@@ -10,5 +10,5 @@
     <string name="menu_item_2_girditem_employee">Leave Types</string>
     <string name="menu_item_1_girditem_department">Departments</string>
     <string name="menu_item_2_girditem_department">Roles</string>
-    <string name="search_box_hint">နာမည္ျဖင့္ရွာရန္</string>
+    <string name="search_box_hint">Search by Employee Name</string>
 </resources>
