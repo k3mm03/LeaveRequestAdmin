@@ -57,11 +57,22 @@ public class RequestsListFragment extends Fragment {
             @Override
             public boolean onQueryTextSubmit(String s) {
                 Toast.makeText(layout.getContext(), s + "", Toast.LENGTH_SHORT).show();
+                List<Requests> searchedList = new ArrayList<>();
+                for(Requests request : requests){
+                    if(TextUtils.equals(s, request.getName())){
+                        searchedList.add(request);
+                    }
+                }
+                adapter.setData(searchedList);
                 return false;
             }
 
             @Override
-            public boolean onQueryTextChange(String s) {
+            public boolean onQueryTextChange(String s)
+            {
+                if(TextUtils.equals(s.trim(), "")){
+                    adapter.setData(requests);
+                }
                 return false;
             }
         });
